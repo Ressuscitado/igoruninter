@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #ffffff, #24608d);
+            background-size: cover;
+            background-attachment: fixed;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .image-container {
+            width: 180px;
+            margin-right: 100px;
+            margin-bottom: 20px;
+        }
+        img {
+            width: 100%;
+            border-radius: 5%;
+            box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.5);
+        }
+        .text-container {
+            width: calc(100% - 280px);
+            text-align: left;
+        }
+        h1 {
+            font-size: 34px;
+            color: #fff;
+            background-color: #0d1f2d;
+            border: 2px solid #0d1f2d;
+            border-radius: 10px;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+        }
+        p {
+            color: #0d1f2d;
+            font-size: 20px;
+            line-height: 1.5;
+            margin-top: 0;
+        }
+        .highlight {
+            color: #1b0569;
+            font-weight: bold;
+        }
+        @media only screen and (max-width: 600px) {
+            .image-container {
+                display: none; /* Oculta a imagem em dispositivos móveis */
+            }
+            h1 {
+                display: none; /* Oculta o título em dispositivos móveis */
+            }
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .text-container {
+                width: 100%;
+                text-align: center;
+            }
+            p {
+                font-size: 16px; /* Reduz ainda mais o tamanho do texto */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="assets/3.jpg" alt="Dono do portfólio">
+        </div>
+        <div class="text-container">
+            <h1>Um Pouco Sobre Mim (:)</h1>
+            <p>Calmo, analítico, determinado e extremamente focado! <br/><br/>
+            A área de tecnologia me possibilitou reencontrar-me como pessoa e definir meus objetivos.<br/> Tenho a ambição de ser um desenvolvedor <span class="highlight">Web Fullstack</span>.<br/><br/>
+            Além do mundo da tecnologia, tenho paixão por ler, assistir animes, séries e filmes. Também pratico calistenia e cuido da minha alimentação. A paixão por viajar é o principal impulsionador da minha carreira, pois a tecnologia me oferece a liberdade geográfica necessária para conhecer diferentes lugares, culturas e pessoas. Sonho em explorar o mundo, criar conexões e aprender com as experiências!</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <style>
+        body {
+            background-color: #f0f8ff; /* Tom de azul claro */
+            font-family: Arial, sans-serif;
+            text-align: center; /* Centraliza todo o texto na página */
+            padding-top: 20px; /* Adiciona um espaçamento superior para os links */
+            margin: 0; /* Remove a margem padrão do body */
+            color: #333; /* Cor do texto */
+        }
+
+        header {
+            background-color: #0d1f2d; /* Azul escuro */
+            color: #fff; /* Branco */
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 0; /* Adiciona margem nas laterais */
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0; /* Remove o padding padrão */
+            display: flex; /* Exibe os itens em linha */
+            justify-content: center; /* Centraliza os itens horizontalmente */
+        }
+
+        nav ul li {
+            margin: 0 10px; /* Adiciona espaçamento entre os itens */
+        }
+
+        nav ul li a {
+            color: #0d1f2d; /* Azul escuro */
+            text-decoration: none;
+            font-size: 20px; /* Tamanho da fonte aumentado */
+            transition: color 0.3s ease;
+            background-color: #fff; /* Fundo branco */
+            padding: 10px 20px; /* Espaçamento interno */
+            border-radius: 5px; /* Bordas arredondadas */
+            width: 120px; /* Define a largura fixa para todos os itens */
+            display: inline-block; /* Para que a largura seja respeitada */
+            text-align: center; /* Centraliza o texto */
+        }
+
+
+        nav ul li a:hover {
+            color: #fff; /* Branco */
+            background-color: #0a3d62; /* Azul mais escuro */
+        }
+
+        main {
+            padding: 20px;
+            margin-top: 100px; /* Adiciona margem para compensar a altura do header fixo */
+            display: flex;
+            font-size: 20px;
+            justify-content: center;
+            align-items: center;
+            color: #0d1f2d;
+            height: calc(100vh - 200px); /* Altura igual à altura da janela de visualização - altura do header e do footer */
+            background-image: url('assets/1.png'), url('assets/1.png'); /* Substitua 'caminho_para_sua_imagem.jpg' pelo caminho correto para sua imagem */
+            background-size: 30% auto; /* Define o tamanho da imagem como metade da largura da <main> */
+            background-position: left center, right center; /* Posiciona a imagem à esquerda e à direita */
+            background-repeat: no-repeat; /* Evita que a imagem se repita */
+        }
+
+        footer {
+            background-color: #0d1f2d; /* Azul escuro */
+            color: #fff; /* Branco */
+            padding: 10px 20px;
+            position: fixed;
+            bottom: 0;
+            left: 0; /* Alinha com o lado esquerdo da página */
+            right: 0; /* Alinha com o lado direito da página */
+            margin: 0; /* Adiciona margem apenas superior e inferior */
+            text-align: center;
+        }
+    /* Estilo para dispositivos com largura máxima de 768px (celulares) */
+    @media only screen and (max-width: 768px) {
+        header {
+            position: static; /* Remove a posição fixa para o cabeçalho */
+            padding: 10px; /* Reduz o padding do cabeçalho */
+        }
+
+        nav ul {
+            flex-direction: column; /* Altera a direção para vertical */
+        }
+
+        nav ul li {
+            margin: 10px 0; /* Adiciona espaçamento entre os itens */
+        }
+
+        main {
+            margin-top: 50px; /* Reduz a margem superior */
+            padding: 10px; /* Reduz o padding */
+            background-size: contain; /* Ajusta a imagem para caber completamente */
+            background-repeat: no-repeat; /* Evita que a imagem se repita */
+            background-position: center; /* Centraliza a imagem */
+        }
+
+        footer {
+            position: static; /* Remove a posição fixa para o rodapé */
+        }
+
+        /* Oculta a seção dentro de main em dispositivos móveis */
+        main section {
+            display: none;
+        }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Engenheiro de Software Igor</h1>
+        <nav>
+            <ul>
+                <li><a href="sobre.html">Sobre mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Bem-vind@</h2>
+            <p>Sou apaixonado por tecnologia!!! <br/> Me conheça,<br/> explore meu trabalho,<br/> e entre em contato!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Meu Portfólio</p>
+    </footer>
+</body>
+</html>

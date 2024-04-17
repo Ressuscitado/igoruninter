@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        body {
+            background: linear-gradient(to bottom, #ffffff, #24608d);
+        }
+
+        .content {
+            text-align: center;
+            margin-top: 50px; /* Espaço no topo */
+        }
+
+        h1 {
+            background-color: #0d1f2d;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-align: center;
+            border-radius: 5px;
+            display: inline-block; /* Torna o h1 do tamanho do texto */
+            margin-top: 0;
+            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        p {
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .highlight {
+            color: #390dd6;
+        }
+
+        .yellow {
+            background-color: #fcd306; /* Amarelo */
+            font-size: 30px; /* Tamanho da fonte aumentado */
+            color:#ffffff;
+            border-radius: 5px;
+        }
+
+        .project-details {
+            background-color: rgba(215, 226, 255, 0.8); /* Branco com transparência */
+            border-radius: 10px;
+            padding: 20px; /* Espaçamento interno */
+            margin-top: 20px; /* Espaçamento superior */
+            box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        a {
+            color: #ffffff;
+            background-color: #fcd306;
+            text-decoration: none;
+            font-size: 60px; /* Aumenta o tamanho do texto do link */
+            border-radius: 50%;
+            display: inline-block; /* Transforma o link em bloco para ocupar a largura total */
+            padding: 20px; /* Espaçamento interno */
+            transition: box-shadow 0.3s; /* Adiciona transição para suavizar a mudança */
+        }
+
+        a:hover {
+            text-decoration: none; /* Remove o sublinhado ao passar o mouse */
+            background-color: #ffffff;
+            color: #fcd306;
+            box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        a:active {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 1); /* Sombra forte ao clicar */
+        }
+
+        /* Media query para dispositivos móveis */
+        @media only screen and (max-width: 600px) {
+            a {
+                font-size: 20px;  /* Reduz drasticamente o tamanho do link para dispositivos móveis */
+                
+            }
+            p {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Esses são meus projetos:</h1>
+        <div class="project-details">
+            <p><span class="yellow">X-MEN:</span> Site Front-end, responsivo, utilizando <span class="highlight">HTML</span>, <span class="highlight">CSS</span> e <span class="highlight">JavaScript</span><br/>
+            Representação de uma escolha de personagens de um jogo, inspirado pelos X-men<br/>
+            Feito com o auxílio do canal no Youtube: Devemdobro</p>
+            <a href="https://ressuscitado.github.io/X-MEN/" target="_blank">Projeto X-men</a>
+        </div>
+    </div>
+</body>
+</html>
